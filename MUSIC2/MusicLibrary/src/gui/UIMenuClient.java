@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -20,7 +19,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
@@ -28,15 +26,14 @@ import java.awt.Image;
 
 import javax.swing.JSeparator;
 import javax.swing.SwingConstants;
-import javax.swing.JList;
 import javax.swing.JRadioButton;
-import javax.swing.JScrollBar;
 import java.awt.Color;
 import java.awt.Component;
 
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
+@SuppressWarnings("serial")
 public class UIMenuClient extends JFrame {
 
 	private JPanel contentPane;
@@ -231,7 +228,7 @@ public class UIMenuClient extends JFrame {
 			JLabel label = new JLabel();
 
 			Image imagen = new ImageIcon(vinilos.get(i).getCover()).getImage();
-			ImageIcon imagen2 = new ImageIcon(imagen.getScaledInstance(100, 100, imagen.SCALE_SMOOTH));
+			ImageIcon imagen2 = new ImageIcon(imagen.getScaledInstance(100, 100, Image.SCALE_SMOOTH));
 
 			label.setIcon(imagen2);
 			label.setHorizontalAlignment(JLabel.CENTER);
@@ -263,6 +260,7 @@ public class UIMenuClient extends JFrame {
 
 		// SEGUNDA
 
+		@SuppressWarnings("unused")
 		String[] columnNames1 = { "image", "Album Title", "Arrtist", "Genre", "Price", "On sale:", "Sale percentage:" };
 
 //		Object[][] data1 = {

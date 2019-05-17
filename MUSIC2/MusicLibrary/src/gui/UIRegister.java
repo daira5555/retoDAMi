@@ -14,6 +14,7 @@ import javax.swing.JTextField;
 import java.awt.Color;
 import javax.swing.JPasswordField;
 
+@SuppressWarnings("serial")
 public class UIRegister extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();

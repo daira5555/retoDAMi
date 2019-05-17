@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -12,6 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Color;
 
+@SuppressWarnings("serial")
 public class UINewVinyl extends JFrame {
 
 	private JPanel contentPane;

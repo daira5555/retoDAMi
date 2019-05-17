@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -9,12 +8,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
-import javax.swing.JList;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Color;
 import java.awt.Font;
 
+@SuppressWarnings("serial")
 public class UICart extends JFrame {
 
 	private JPanel contentPane;
@@ -111,8 +110,7 @@ public class UICart extends JFrame {
 		JTable table_1 = new JTable(data, columnNames);
 		scrollPane.setViewportView(table_1);
 		
-		JList list = new JList();
-		scrollPane.setColumnHeaderView(list);
+	
 	}
 
 }

@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -11,11 +10,10 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JSeparator;
 import java.awt.Color;
-import javax.swing.JList;
 import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
 import javax.swing.JScrollPane;
 
+@SuppressWarnings("serial")
 public class UIAdvancedSearchClient extends JFrame {
 
 	private JPanel contentPane;

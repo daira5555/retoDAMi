@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -15,6 +14,7 @@ import java.awt.Font;
 import javax.swing.JPasswordField;
 import java.awt.Color;
 
+@SuppressWarnings("serial")
 public class UILogin extends JFrame {
 
 	private JPanel contentPane;

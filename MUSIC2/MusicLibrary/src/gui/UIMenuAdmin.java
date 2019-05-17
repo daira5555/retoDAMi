@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -14,11 +13,9 @@ import javax.swing.JSeparator;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-import javax.swing.JTabbedPane;
 
+@SuppressWarnings("serial")
 public class UIMenuAdmin extends JFrame {
 
 	private JPanel contentPane;
@@ -29,6 +26,7 @@ public class UIMenuAdmin extends JFrame {
 	private JTextField priceField;
 	private JButton btnDelete;
 	private JButton btnModify;
+	@SuppressWarnings("unused")
 	private JTable table;
 	private JTextField stockField;
 	private JButton btnOrderVinyl;
