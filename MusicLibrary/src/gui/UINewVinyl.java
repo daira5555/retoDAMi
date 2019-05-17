@@ -22,6 +22,7 @@ public class UINewVinyl extends JFrame {
 	private JTextField descriptionField;
 	private JRadioButton rdbtnNo;
 	private JRadioButton rdbtnYes;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -45,7 +46,7 @@ public class UINewVinyl extends JFrame {
 	public UINewVinyl() {
 		setTitle("Insert new vinyl");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 438, 385);
+		setBounds(100, 100, 489, 462);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 245, 238));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -69,7 +70,7 @@ public class UINewVinyl extends JFrame {
 		contentPane.add(lblPrice);
 		
 		JLabel lblDescription = new JLabel("Description: ");
-		lblDescription.setBounds(50, 211, 65, 14);
+		lblDescription.setBounds(50, 211, 84, 14);
 		contentPane.add(lblDescription);
 		
 		JLabel lblSale = new JLabel("sale:");
@@ -107,19 +108,36 @@ public class UINewVinyl extends JFrame {
 		priceField.setColumns(10);
 		
 		descriptionField = new JTextField();
-		descriptionField.setBounds(144, 211, 185, 47);
+		descriptionField.setBounds(144, 211, 178, 47);
 		contentPane.add(descriptionField);
 		descriptionField.setColumns(10);
 		
 		JButton btnSubmitChanges = new JButton("Submit");
 		btnSubmitChanges.setBackground(new Color(255, 235, 205));
-		btnSubmitChanges.setBounds(145, 300, 83, 23);
+		btnSubmitChanges.setBounds(105, 374, 83, 23);
 		contentPane.add(btnSubmitChanges);
 		
 		JButton btnCancel = new JButton("Cancel");
 		btnCancel.setBackground(new Color(255, 239, 213));
-		btnCancel.setBounds(233, 300, 89, 23);
+		btnCancel.setBounds(233, 374, 89, 23);
 		contentPane.add(btnCancel);
+		
+		JLabel label = new JLabel("Sale percentage:");
+		label.setBounds(50, 308, 138, 14);
+		contentPane.add(label);
+		
+		textField = new JTextField();
+		textField.setColumns(10);
+		textField.setBounds(156, 305, 89, 20);
+		contentPane.add(textField);
+		
+		JLabel label_1 = new JLabel("Image:");
+		label_1.setBounds(50, 343, 46, 14);
+		contentPane.add(label_1);
+		
+		JButton button = new JButton("Select");
+		button.setBackground(new Color(255, 218, 185));
+		button.setBounds(156, 340, 89, 23);
+		contentPane.add(button);
 	}
-
 }

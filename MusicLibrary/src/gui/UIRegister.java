@@ -54,58 +54,58 @@ public class UIRegister extends JDialog {
 		contentPanel.setLayout(null);
 		{
 			JLabel lblName = new JLabel("Name:");
-			lblName.setBounds(54, 51, 59, 14);
+			lblName.setBounds(42, 51, 59, 14);
 			contentPanel.add(lblName);
 		}
 		{
 			JLabel lblSurname = new JLabel("Surname:");
-			lblSurname.setBounds(54, 86, 46, 14);
+			lblSurname.setBounds(42, 86, 86, 14);
 			contentPanel.add(lblSurname);
 		}
 		{
 			JLabel lblAddress = new JLabel("Address:");
-			lblAddress.setBounds(54, 133, 46, 14);
+			lblAddress.setBounds(42, 133, 59, 14);
 			contentPanel.add(lblAddress);
 		}
 		
 		JSeparator separator = new JSeparator();
-		separator.setBounds(54, 120, 256, 2);
+		separator.setBounds(42, 120, 266, 2);
 		contentPanel.add(separator);
 		
 		JSeparator separator_1 = new JSeparator();
-		separator_1.setBounds(54, 173, 256, 2);
+		separator_1.setBounds(42, 173, 266, 2);
 		contentPanel.add(separator_1);
 		
 		JLabel lblPhoneNumber = new JLabel("Phone number:");
-		lblPhoneNumber.setBounds(54, 186, 86, 14);
+		lblPhoneNumber.setBounds(42, 186, 97, 14);
 		contentPanel.add(lblPhoneNumber);
 		
 		JLabel lblEmail = new JLabel("e-mail:");
-		lblEmail.setBounds(54, 222, 59, 14);
+		lblEmail.setBounds(42, 222, 59, 14);
 		contentPanel.add(lblEmail);
 		
 		JLabel lblBankAccount = new JLabel("Bank account number:");
-		lblBankAccount.setBounds(54, 262, 117, 14);
+		lblBankAccount.setBounds(42, 259, 149, 14);
 		contentPanel.add(lblBankAccount);
 		{
 			JSeparator separator_2 = new JSeparator();
-			separator_2.setBounds(54, 309, 256, 2);
+			separator_2.setBounds(42, 309, 268, 2);
 			contentPanel.add(separator_2);
 		}
 		{
 			JLabel lblUsername = new JLabel("Username:");
-			lblUsername.setBounds(54, 322, 73, 14);
+			lblUsername.setBounds(42, 322, 73, 14);
 			contentPanel.add(lblUsername);
 		}
 		{
 			JLabel lblInsertNewPassword = new JLabel("Insert password:");
-			lblInsertNewPassword.setBounds(54, 372, 117, 14);
+			lblInsertNewPassword.setBounds(42, 372, 117, 14);
 			contentPanel.add(lblInsertNewPassword);
 		}
 		{
 			JLabel lblyouWillNot = new JLabel("(You will not be able to change this later)");
 			lblyouWillNot.setFont(new Font("Arial", Font.PLAIN, 9));
-			lblyouWillNot.setBounds(54, 347, 215, 14);
+			lblyouWillNot.setBounds(42, 347, 215, 14);
 			contentPanel.add(lblyouWillNot);
 		}
 		{

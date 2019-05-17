@@ -113,14 +113,17 @@ public class UIModifyVinyl extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		btnSelect = new JButton("Select");
-		btnSelect.setBounds(147, 278, 89, 23);
+		btnSelect.setBackground(new Color(255, 218, 185));
+		btnSelect.setBounds(147, 278, 86, 23);
 		contentPane.add(btnSelect);
 		
 		JButton btnSubmitChanges = new JButton("Submit changes");
+		btnSubmitChanges.setBackground(new Color(255, 218, 185));
 		btnSubmitChanges.setBounds(24, 356, 142, 23);
 		contentPane.add(btnSubmitChanges);
 		
 		JButton btnCancel = new JButton("Cancel");
+		btnCancel.setBackground(new Color(255, 218, 185));
 		btnCancel.setBounds(302, 356, 89, 23);
 		contentPane.add(btnCancel);
 		

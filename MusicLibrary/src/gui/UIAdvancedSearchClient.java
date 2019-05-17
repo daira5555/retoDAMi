@@ -50,7 +50,7 @@ public class UIAdvancedSearchClient extends JFrame {
 	public UIAdvancedSearchClient() {
 		setTitle("Advanced search");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1126, 689);
+		setBounds(100, 100, 1084, 751);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(250, 235, 215));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -103,42 +103,35 @@ public class UIAdvancedSearchClient extends JFrame {
 		priceField.setColumns(10);
 		
 		JSeparator separator = new JSeparator();
-		separator.setBounds(44, 194, 1056, 2);
+		separator.setBounds(29, 194, 997, 2);
 		contentPane.add(separator);
 		
 		btnBuySelected = new JButton("Add to cart");
-		btnBuySelected.setBounds(494, 573, 116, 42);
+		btnBuySelected.setBackground(new Color(255, 218, 185));
+		btnBuySelected.setBounds(493, 616, 116, 42);
 		contentPane.add(btnBuySelected);
 		
 		btnGoToCart = new JButton("Go to cart");
-		btnGoToCart.setBounds(326, 573, 123, 42);
+		btnGoToCart.setBackground(new Color(255, 218, 185));
+		btnGoToCart.setBounds(332, 616, 123, 42);
 		contentPane.add(btnGoToCart);
 		
 		btnReturnToMenu = new JButton("Return to menu");
-		btnReturnToMenu.setBounds(649, 573, 137, 42);
+		btnReturnToMenu.setBackground(new Color(255, 218, 185));
+		btnReturnToMenu.setBounds(652, 616, 137, 42);
 		contentPane.add(btnReturnToMenu);
 		
-		String[] columnNames = {"Album Title",
-                "Arrtist",
-                "Genre",
-                "Price",
-                "On sale:"};
+		String[] columnNames = { "Album Title", "Arrtist", "Genre", "Price", "On sale:", "Sale percentage:" };
 
-Object[][] data = {
-{"The Dark Side of the Moon'", "Pink Floyd",
-"Rock psicodélico", new Integer(5), new Boolean(false)},
-{"London Calling", "The Clash",
-"New wave", new Integer(3), new Boolean(true)},
-{"Shilling the Rubes", "David Bowie",
-"New wave", new Integer(2), new Boolean(false)},
-{"Back in Black", "AC/DC",
-"Hard rock", new Integer(20), new Boolean(true)},
-{"Nevermind", "Nirvana",
-"Grunge", new Integer(10), new Boolean(false)}
-};
+		Object[][] data = {
+				{ "The Dark Side of the Moon'", "Pink Floyd", "Rock psicodélico", new Integer(20), new Boolean(false), new Integer(20) },
+				{ "London Calling", "The Clash", "New wave", new Integer(22), new Boolean(true),new Integer(20) },
+				{ "Shilling the Rubes", "David Bowie", "New wave", new Integer(21), new Boolean(false),new Integer(20) },
+				{ "Back in Black", "AC/DC", "Hard rock", new Integer(20), new Boolean(true),new Integer(20) },
+				{ "Nevermind", "Nirvana", "Grunge", new Integer(21), new Boolean(false),new Integer(20) } };
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(84, 236, 930, 277);
+		scrollPane.setBounds(84, 240, 930, 344);
 		contentPane.add(scrollPane);
 		
 		JTable table_1 = new JTable(data,columnNames);

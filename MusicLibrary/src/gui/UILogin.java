@@ -45,7 +45,7 @@ public class UILogin extends JFrame {
 	public UILogin() {
 		setTitle("Log in");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 300, 250);
+		setBounds(100, 100, 690, 410);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 235, 205));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -54,18 +54,18 @@ public class UILogin extends JFrame {
 		
 		JLabel lblUsername = new JLabel("Username");
 		lblUsername.setFont(new Font("Arial", Font.BOLD, 13));
-		lblUsername.setBounds(116, 11, 77, 14);
+		lblUsername.setBounds(297, 28, 77, 14);
 		contentPane.add(lblUsername);
 		
 		JLabel lblPassword = new JLabel("Password");
 		lblPassword.setFont(new Font("Arial", Font.BOLD, 13));
-		lblPassword.setBounds(115, 77, 67, 14);
+		lblPassword.setBounds(297, 147, 67, 14);
 		contentPane.add(lblPassword);
 		
 		btnLogIn = new JButton("Log in ");
 		btnLogIn.setBackground(new Color(255, 228, 181));
 		btnLogIn.setFont(new Font("Arial", Font.BOLD, 11));
-		btnLogIn.setBounds(43, 148, 89, 23);
+		btnLogIn.setBounds(297, 279, 89, 23);
 		contentPane.add(btnLogIn);
 		
 		btnSignUp = new JButton("Sign up");
@@ -75,16 +75,16 @@ public class UILogin extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnSignUp.setBounds(152, 148, 89, 23);
+		btnSignUp.setBounds(297, 245, 89, 23);
 		contentPane.add(btnSignUp);
 		
 		usernameField = new JTextField();
-		usernameField.setBounds(48, 36, 193, 23);
+		usernameField.setBounds(189, 84, 302, 23);
 		contentPane.add(usernameField);
 		usernameField.setColumns(10);
 		
 		passwordField = new JPasswordField();
-		passwordField.setBounds(48, 103, 193, 23);
+		passwordField.setBounds(189, 172, 302, 23);
 		contentPane.add(passwordField);
 	}
 }

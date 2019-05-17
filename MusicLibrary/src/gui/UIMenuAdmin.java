@@ -61,7 +61,7 @@ public class UIMenuAdmin extends JFrame {
 	public UIMenuAdmin() {
 		setTitle("Main Menu");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1154, 708);
+		setBounds(100, 100, 1149, 707);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(250, 235, 215));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -126,15 +126,14 @@ public class UIMenuAdmin extends JFrame {
 		btnModify.setBackground(new Color(255, 218, 185));
 		btnModify.setBounds(663, 591, 123, 42);
 		contentPane.add(btnModify);
-
-		String[] columnNames = { "Album Title", "Arrtist", "Genre", "Price", "On sale:" };
+		String[] columnNames = { "Album Title", "Arrtist", "Genre", "Price", "On sale:", "Sale percentage:" };
 
 		Object[][] data = {
-				{ "The Dark Side of the Moon'", "Pink Floyd", "Rock psicodélico", new Integer(5), new Boolean(false) },
-				{ "London Calling", "The Clash", "New wave", new Integer(3), new Boolean(true) },
-				{ "Shilling the Rubes", "David Bowie", "New wave", new Integer(2), new Boolean(false) },
-				{ "Back in Black", "AC/DC", "Hard rock", new Integer(20), new Boolean(true) },
-				{ "Nevermind", "Nirvana", "Grunge", new Integer(10), new Boolean(false) } };
+				{ "The Dark Side of the Moon'", "Pink Floyd", "Rock psicodélico", new Integer(20), new Boolean(false), new Integer(20) },
+				{ "London Calling", "The Clash", "New wave", new Integer(22), new Boolean(true),new Integer(20) },
+				{ "Shilling the Rubes", "David Bowie", "New wave", new Integer(21), new Boolean(false),new Integer(20) },
+				{ "Back in Black", "AC/DC", "Hard rock", new Integer(20), new Boolean(true),new Integer(20) },
+				{ "Nevermind", "Nirvana", "Grunge", new Integer(21), new Boolean(false),new Integer(20) } };
 
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(41, 92, 1056, 202);
@@ -193,20 +192,20 @@ public class UIMenuAdmin extends JFrame {
 		rdbtnFromTheBegining.setBounds(41, 534, 221, 23);
 		contentPane.add(rdbtnFromTheBegining);
 
-		String[] columnNames1 = { "Album Title", "Arrtist", "Genre", "Price", "On sale:" };
+		String[] columnNames1 = { "Album Title", "Arrtist", "Genre", "Price", "On sale:", "Sale percentage:" };
 
 		Object[][] data1 = {
-				{ "The Dark Side of the Moon'", "Pink Floyd", "Rock psicodélico", new Integer(5), new Boolean(false) },
-				{ "London Calling", "The Clash", "New wave", new Integer(3), new Boolean(true) },
-				{ "Shilling the Rubes", "David Bowie", "New wave", new Integer(2), new Boolean(false) },
-				{ "Back in Black", "AC/DC", "Hard rock", new Integer(20), new Boolean(true) },
-				{ "Nevermind", "Nirvana", "Grunge", new Integer(10), new Boolean(false) } };
+				{ "The Dark Side of the Moon'", "Pink Floyd", "Rock psicodélico", new Integer(20), new Boolean(false), new Integer(20) },
+				{ "London Calling", "The Clash", "New wave", new Integer(22), new Boolean(true),new Integer(20) },
+				{ "Shilling the Rubes", "David Bowie", "New wave", new Integer(21), new Boolean(false),new Integer(20) },
+				{ "Back in Black", "AC/DC", "Hard rock", new Integer(20), new Boolean(true),new Integer(20) },
+				{ "Nevermind", "Nirvana", "Grunge", new Integer(21), new Boolean(false),new Integer(20) } };
 
 		scrollPane_1 = new JScrollPane();
 		scrollPane_1.setBounds(289, 354, 808, 226);
 		contentPane.add(scrollPane_1);
 
-		table_1 = new JTable(data, columnNames);
+		table_1 = new JTable(data1, columnNames1);
 		scrollPane_1.setViewportView(table_1);
 	}
 }

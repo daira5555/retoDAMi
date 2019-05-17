@@ -94,14 +94,15 @@ public class UICart extends JFrame {
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
-		String[] columnNames = { "Album Title", "Arrtist", "Genre", "Price", "On sale:" };
+		String[] columnNames = { "Album Title", "Arrtist", "Genre", "Price", "On sale:", "Sale percentage:" };
 
 		Object[][] data = {
-				{ "The Dark Side of the Moon'", "Pink Floyd", "Rock psicodélico", new Integer(5), new Boolean(false) },
-				{ "London Calling", "The Clash", "New wave", new Integer(3), new Boolean(true) },
-				{ "Shilling the Rubes", "David Bowie", "New wave", new Integer(2), new Boolean(false) },
-				{ "Back in Black", "AC/DC", "Hard rock", new Integer(20), new Boolean(true) },
-				{ "Nevermind", "Nirvana", "Grunge", new Integer(10), new Boolean(false) } };
+				{ "The Dark Side of the Moon'", "Pink Floyd", "Rock psicodélico", new Integer(20), new Boolean(false), new Integer(20) },
+				{ "London Calling", "The Clash", "New wave", new Integer(22), new Boolean(true),new Integer(20) },
+				{ "Shilling the Rubes", "David Bowie", "New wave", new Integer(21), new Boolean(false),new Integer(20) },
+				{ "Back in Black", "AC/DC", "Hard rock", new Integer(20), new Boolean(true),new Integer(20) },
+				{ "Nevermind", "Nirvana", "Grunge", new Integer(21), new Boolean(false),new Integer(20) } };
+
 
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(27, 78, 960, 427);
